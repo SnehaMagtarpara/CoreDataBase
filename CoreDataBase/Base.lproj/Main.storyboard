@@ -16,37 +16,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-16-dei">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-16-dei">
                                 <rect key="frame" x="20" y="60" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Kwg-q6-DT3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zaP-z6-v6I">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zaP-z6-v6I">
                                 <rect key="frame" x="20" y="122" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Xzg-hs-boR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-av-xrl">
-                                <rect key="frame" x="159" y="238" width="97" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-S7-4zP">
+                                <rect key="frame" x="20" y="184" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="4Kn-o1-Aq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viA-ei-ppW">
+                                <rect key="frame" x="159" y="228" width="97" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="PgR-zK-Hg4"/>
+                                    <constraint firstAttribute="width" constant="97" id="cHk-sM-iqa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Delete Data"/>
+                                <connections>
+                                    <action selector="deleteDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0z-Se-OlI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-av-xrl">
+                                <rect key="frame" x="20" y="228" width="97" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Fo4-QJ-2fr"/>
+                                    <constraint firstAttribute="width" constant="97" id="cVQ-iz-eoq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Add Data"/>
                                 <connections>
-                                    <action selector="adddataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wE3-oG-qCK"/>
+                                    <action selector="adddataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nh6-fq-inS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-S7-4zP">
-                                <rect key="frame" x="20" y="175" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UO-xO-SZw">
+                                <rect key="frame" x="297" y="228" width="97" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="FTd-87-wAW"/>
+                                    <constraint firstAttribute="height" constant="49" id="Z2M-Yx-nWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="deleteDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbS-OH-ZQt"/>
+                                    <action selector="getDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lY9-1B-ZH7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VyS-S7-4zP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="06y-qp-OVv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zaP-z6-v6I" secondAttribute="trailing" constant="20" id="0Oi-qk-baa"/>
+                            <constraint firstItem="OtH-av-xrl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2ZS-RT-26j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4UO-xO-SZw" secondAttribute="trailing" constant="20" id="8CU-9R-vXQ"/>
+                            <constraint firstItem="OtH-av-xrl" firstAttribute="top" secondItem="VyS-S7-4zP" secondAttribute="bottom" constant="10" id="8Hn-2S-n0V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0fj-16-dei" secondAttribute="trailing" constant="20" id="B0s-Dy-7vZ"/>
+                            <constraint firstItem="0fj-16-dei" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Eui-01-fP2"/>
+                            <constraint firstItem="zaP-z6-v6I" firstAttribute="top" secondItem="0fj-16-dei" secondAttribute="bottom" constant="28" id="MY2-8b-0l9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VyS-S7-4zP" secondAttribute="trailing" constant="20" id="UdO-Jd-Bz3"/>
+                            <constraint firstItem="zaP-z6-v6I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uxd-uh-din"/>
+                            <constraint firstItem="viA-ei-ppW" firstAttribute="leading" secondItem="OtH-av-xrl" secondAttribute="trailing" constant="42" id="cPL-jK-EbN"/>
+                            <constraint firstItem="4UO-xO-SZw" firstAttribute="top" secondItem="VyS-S7-4zP" secondAttribute="bottom" constant="10" id="hZX-ck-Bhq"/>
+                            <constraint firstItem="viA-ei-ppW" firstAttribute="top" secondItem="VyS-S7-4zP" secondAttribute="bottom" constant="10" id="nJZ-CR-bvB"/>
+                            <constraint firstItem="0fj-16-dei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vWc-P0-xqW"/>
+                            <constraint firstItem="VyS-S7-4zP" firstAttribute="top" secondItem="zaP-z6-v6I" secondAttribute="bottom" constant="28" id="wWY-nE-g6K"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="idTextField" destination="0fj-16-dei" id="OMB-ha-aiU"/>
